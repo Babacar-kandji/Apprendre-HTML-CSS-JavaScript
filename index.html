@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon site de developpement</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>  
+    <h1 id="gros-titre">mon premier titre</h1>
+    <p>un premier pargraphe</p>
+    <p class="paraa">clique <a href="http://wikipedia">ici</a> pour aller dans le page d'acceuil de wikipedia</p>
+
+    <div class="pol">
+        <p>un paragraphe</p>
+        <p>un deuxieme paragraphe</p>
+        <p>un troisieme paragraphe</p>
+    </div>
+    <caption id="capt">tableau d'essai</caption>
+    <table class="tb">
+        <tr>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Numero</th>
+            <th>Filiere</th>
+        </tr>
+            <td>Kandji</td>
+            <td>Babacar</td>
+            <td>770338301</td>
+            <td>Mio</td>
+        <tr>
+            <td>Ndiaye</td>
+            <td>Modou</td>
+            <td>784537801</td>
+            <td>Second</td>
+        </tr>
+    </table>
+
+    <div class="ani">
+        <p>un essai</p>
+        <p>un second essai</p>
+        <p>un troisieme essai</p>
+    </div><br><br><br><br><br><br><br><br><br><br>
+        <p>hors de div</p>
+        
+        <h1>Les Sprites</h1>
+    <div class="Sprites">
+        <button>
+        <p><a href="http://facebook" id="fb"></a></p>
+        <p><a href="http://pinterest" id="pt"></a></p>
+        <p><a href="http://linkedin" id="lk"></a></p>
+        <p><a href="http://twitter" id="tw"></a></p>
+        </button>
+    </div>
+
+    <h1>inserer une image</h1> <!--on utilse la balise img pour inserer une image-->
+        <img src="mike-de-tokyo-revenger.jpeg" alt="le chef du gang tokyo mangie">
+
+    <h1>inserer une audio</h1>   <!--inserer la balise audio pour inserer une audio-->
+        <audio src="audio-d-essai.mp4" controls></audio>
+
+    <h1>inserer une video</h1> <!--on utilise la balise video pour inser u ne video-->
+        <video src="c:\Users\user\Desktop\test-html\video-coran.mp4" controls></video>
+
+    <h1>Les Formulaires</h1>
+    <form action="submit.php" method="post">
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="Number">number:</label>
+        <input type="number" name="number" id="number"><br>
+        <label for="message">message:</label>
+        <textarea name="message" id="message" rows="5"></textarea><br>
+        <button action="submit" id="Sen">Send</button>
+    </form>
+
+    <h1>Les Animations</h1>
+    <div class="anim">
+        <p>je suis un html</p>
+        <p>je suis css</p>
+        <p>je suis un javascript</p>
+    </div>
+    <h1>Les Listes Non-ordonnees</h1>
+        <ul>
+            <li>Tomate</li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ul>
+    <h1>Les Listes Ordonnees</h1>    
+        <ol>
+            <li>Introduction</li>
+            <li>Developpement</li>
+            <li>Conclusion</li>
+        </ol>
+
+    <script>
+        alert('je suis javascript');
+        var x = 24;
+        var y = 'je suis une chaine de caractere';
+
+        alert("variable x : " + typeof(x) +
+            "\nvariable y : " + typeof(y)
+    );
+
+        var n = 2;
+
+        if( x > 0 ){
+            alert('la valeur de n est positif');
+        }
+        else if( x < 0 ){
+            alert("la valeur de n est negatif");
+        }
+        else{
+            alert('la valeur de n est nul');
+        }
+
+        var titre = document.getElementById('gros-titre');
+        alert(titre);
+
+        var tableau = document.getElementsByTagName('p');
+        alert('notre page contient : ' + tableau.length + 'paragraphes');
+
+        var tab = document.getElementsByClassName('anim');
+        alert('notre page html contient : ' + tab.length+ 'paragraphe de class anim');
+
+        /*pour voir le contenu d'un element html on utilise innerHTML*/
+        var titre = document.getElementById("gros-titre").innerHTML;
+        alert(titre);
+
+        /*queryselector */
+        var p = document.querySelector('.paraa').innerHTML;
+        alert(p);
+
+        /*les elements title, body et lien*/
+        var titre = document.title;
+        var corps = document.body;
+        var lien = document.links
+
+        alert('contenu de title : ' + titre +
+            '\ncontenu de body : ' + corps + 
+            '\nconteu de lien : ' + lien[0]
+        );
+
+        /*modifier un contrnu du html*/
+        var titre = document.getElementById('gros-titre').innerHTML = "apprendre html, css, javascript";
+
+        /*rajouter du contenu dans mon titre*/
+        var titre = document.getElementById('gros-titre').innerHTML += '\nafin de creer des sites web';
+
+        /*pour modifier le contenu d'un lien*/
+        var lien = document.querySelector('a').href ='http://wikipeadia.org'; /*maintenant on a modifier notre en inserant un autre dans un guilleme*/
+
+
+        </script>
+</body>
+</html>

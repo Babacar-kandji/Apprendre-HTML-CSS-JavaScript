@@ -1,0 +1,130 @@
+body{
+    text-decoration: ;
+}
+#gros-titre{
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 6px black;
+}
+
+.ani{
+    margin: 25px;
+    padding: 10px;
+    height: 400;
+    width: 4000;
+    float: inline-start;
+    line-height: 20px;
+    background: -webkit-linear-gradient( top left, red, blue, green);
+}
+
+p{
+    text-transform: capitalize;
+}
+
+p::first-line{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.tb{
+    border: 5px black;
+    font-size: 30px;
+}
+
+#capt{
+    font-size: 50px;
+}
+
+th{
+    background-color: blue;
+
+}
+
+tr{
+    background-color: tomato;
+}
+
+#fb, #pt, #lk, #tw{
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    background-size: 200px;
+    margin-right: 90px;
+    padding: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+}
+
+#fb{
+    background-image: url(logos-sociaux.jpeg);
+    background-position: -4px -4px;
+    align-items: normal;
+}
+
+#pt{
+    background-image: url(logos-sociaux.jpeg);
+    background-position: -54px -54px;
+}
+
+#lk{
+    background-image: url(logos-sociaux.jpeg);
+    background-position: -104px -54px;
+}
+
+#tw{
+    background-image: url(logos-sociaux.jpeg);
+    background-position: -50px -4px;
+}
+
+.sprites{
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img{
+    width: 400px;
+    position: relative;
+}
+
+video{
+    width: 200px;
+}
+
+#name, #email, #number, #message{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+#sen{
+    background-color: brown;
+    color: black;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.anim{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    -webkit-animation-name: changement-de-couleur;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes changement-de-couleur{
+    0%{background-color: brown;}
+    25%{background-color: chartreuse;}
+    50%{background-color: cornflowerblue;}
+    75%{background-color: crimson;}
+    100%{background-color: darkgoldenrod;}
+}
