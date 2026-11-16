@@ -1,2 +1,2 @@
 # html-css
-comprendre ghitub
+ceci permet de comprendre quelque notion de html css et javascript
